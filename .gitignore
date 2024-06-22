@@ -1,3 +1,40 @@
 .DS_Store
 /backend/venv
 /backend/__pycache__
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+frontend/chrome-extension/node_modules
+frontend/chrome-extension/pnp
+frontend/chrome-extension/pnp.js
+frontend/chrome-extension/yarn/install-state.gz
+
+# testing
+frontend/chrome-extension/coverage
+
+# next.js
+frontend/chrome-extension/.next/
+frontend/chrome-extension/out/
+
+# production
+frontend/chrome-extension/build
+
+# misc
+frontend/chrome-extension/DS_Store
+frontend/chrome-extension/*.pem
+
+# debug
+frontend/chrome-extension/npm-debug.log*
+frontend/chrome-extension/yarn-debug.log*
+frontend/chrome-extension/yarn-error.log*
+
+# local env files
+frontend/chrome-extension/env*.local
+
+# vercel
+frontend/chrome-extension/vercel
+
+# typescript
+frontend/chrome-extension/*.tsbuildinfo
+frontend/chrome-extension/next-env.d.ts
