@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --background-rgb: 255, 255, 255;
+  --primary-color: #00d1b2;
+  --secondary-color: #95efe1;
+}
+
+body, main {
+  color: rgb(var(--background-rgb));
+  background: radial-gradient(circle at top right, #00d1b2, #00796b 15%, #004d40 30%, #000000 75%);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+textarea {
+  resize: none !important;
+  outline: none;
+}
+
+textarea::-webkit-scrollbar {
+  display: none;
+}
+
+textarea {
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.btn {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.btn:hover {
+  transform: scale(1.05);
+}
+.btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1);
+}
