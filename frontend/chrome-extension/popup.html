@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lie Down!</title>
+  <link rel="stylesheet" href="dist/output.css">
+  <style>
+    body, main {
+      font-family: 'Poppins', sans-serif;
+      color: rgb(var(--background-rgb));
+      background: radial-gradient(circle at top right, #00d1b2, #00796b 15%, #004d40 30%, #000000 75%);
+    }
+
+    .container {
+      padding: 2rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn {
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    .btn-primary {
+      background-color: #00d1b2;
+      border-color: #00d1b2;
+    }
+
+    .btn-secondary {
+      background-color: #95efe1;
+      border-color: #95efe1;
+    }
+
+    .text-primary {
+      color: #00d1b2;
+    }
+  </style>
+</head>
+<body class="flex items-center justify-center h-full" style="width: 300px; height: 400px;">
+  <div class="container text-center">
+    <h1 class="text-lg font-bold mb-4 text-primary">Lie Down!</h1>
+    <button id="start-meeting" class="btn btn-primary hover:bg-secondary text-white font-bold py-2 px-4 rounded-full mb-2 w-full shadow-md">Join Meeting</button>
+    <button id="end-meeting" class="btn btn-primary hover:bg-secondary text-white font-bold py-2 px-4 rounded-full mb-2 w-full shadow-md">Leave Meeting</button>
+    <button id="record-meeting" class="btn btn-primary hover:bg-secondary text-white font-bold py-2 px-4 rounded-full mb-2 w-full shadow-md">Start Recording</button>
+    <button id="stop-recording" class="btn btn-primary hover:bg-secondary text-white font-bold py-2 px-4 rounded-full w-full shadow-md">Stop Recording</button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
